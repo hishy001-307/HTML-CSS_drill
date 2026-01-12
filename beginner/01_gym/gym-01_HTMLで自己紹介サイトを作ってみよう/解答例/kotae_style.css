@@ -1,0 +1,46 @@
+/* ===== 全体 ===== */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 24px;
+}
+
+/* ===== 見出し ===== */
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+/* ===== 文章 ===== */
+
+p {
+    margin: 0;
+}
+
+/* ===== リスト ===== */
+
+ul {
+    padding-left: 20px;
+}
+
+/* ===== リンク ===== */
+
+a {
+    color: #0066cc;
+}
+
+/* ===== 画像 ===== */
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-top: 8px;
+}
