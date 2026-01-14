@@ -18,7 +18,7 @@ Gym-01：HTML で自己紹介ページを作ってみよう
 
 やること
 
-starter/index.html と starter/style.css を編集して、
+Edit_me!の中にある starter/index.html と starter/style.css を編集して、
 シンプルな自己紹介ページを完成させてください。
 
 HTML でやること
@@ -47,7 +47,7 @@ CSS では、次の点を確認します。
 「何が変わるか」を目で見て確認してください。
 
 ⸻
-
+Live
 ⸻
 
 チェックリスト（できたか確認）
