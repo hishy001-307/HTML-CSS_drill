@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 日本語を正しく表示するおまじない -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- スマホ対応のおまじない -->
+
+    <title>Gym-03 Layout</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- CSSを読み込むおまじない -->
+</head>
+
+<body>
+    <!-- ===================================================== -->
+    <!-- Gym-03：レイアウト（2カラム + カード一覧） -->
+    <!-- ===================================================== -->
+
+    <div class="layout">
+        <!-- layout：画面全体を2カラムにする箱 -->
+
+        <aside class="sidebar">
+            <!-- sidebar：左側のメニュー -->
+
+            <h1 class="sidebar__title">Menu</h1>
+
+            <nav>
+                <!-- nav：リンクのまとまり -->
+                <!-- ここは編集しなくてOK! ボタンは機能しなくてOK! -->
+
+                <a class="sidebar__link" href="#">Home</a>
+                <a class="sidebar__link" href="#">Projects</a>
+                <a class="sidebar__link" href="#">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <!-- main：右側のメイン領域 -->
+
+            <!-- ↓↓↓ ここを書き換えてください（ページ見出し） ↓↓↓ -->
+            <h1 class="main__title">Dashboard</h1>
+
+            <div class="cards">
+                <!-- cards：カードを並べる箱（Flex） -->
+
+                <!-- ↓↓↓ カードは「最低6枚」になるように複製してください ↓↓↓ -->
+                <div class="card">
+                    <div class="card__image"></div>
+                    <h2 class="card__title">Card Title</h2>
+                    <p class="card__text">ここに短い説明文を書きます。</p>
+                    <a class="card__button" href="#">Detail</a>
+                </div>
+
+                <div class="card">
+                    <div class="card__image"></div>
+                    <h2 class="card__title">Card Title</h2>
+                    <p class="card__text">ここに短い説明文を書きます。</p>
+                    <a class="card__button" href="#">Detail</a>
+                </div>
+
+                <div class="card">
+                    <div class="card__image"></div>
+                    <h2 class="card__title">Card Title</h2>
+                    <p class="card__text">ここに短い説明文を書きます。</p>
+                    <a class="card__button" href="#">Detail</a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/* ===================================================== */
+/* Gym-03：レイアウト（Flexで2カラム + カード一覧） */
+/* ===================================================== */
+
+/* おまじない：幅の計算を直感的にする */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    /* ブラウザ標準の余白を消す（レイアウトの基礎） */
+
+    background: #f6f6f6;
+}
+
+/* ===================================================== */
+/* 2カラムレイアウト */
+/* ===================================================== */
+
+.layout {
+    display: flex;
+    /* ↓↓↓ ここを編集してください：2カラムの間隔 ↓↓↓ */
+    gap: 16px;
+
+    /* ↓↓↓ ここを編集してください：画面の余白 ↓↓↓ */
+    padding: 16px;
+
+    min-height: 100vh;
+    /* 画面の高さいっぱいに伸ばす */
+}
+
+/* 左：サイドバー */
+.sidebar {
+    /* ↓↓↓ ここを編集してください：サイドバーの幅 ↓↓↓ */
+    width: 220px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.sidebar__title {
+    font-size: 18px;
+    margin: 0 0 12px 0;
+}
+
+.sidebar__link {
+    display: block;
+    /* 縦に並べたいのでblock */
+
+    padding: 8px 10px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: #333;
+}
+
+/* ↓↓↓ 余力があれば：hoverで背景を変えてみよう（任意） ↓↓↓ */
+/*
+.sidebar__link:hover {
+  background: #f0f0f0;
+}
+*/
+
+/* 右：メイン */
+.main {
+    flex: 1;
+    /* 残り全部を使う（重要） */
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.main__title {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+/* ===================================================== */
+/* カード一覧（Flex） */
+/* ===================================================== */
+
+.cards {
+    display: flex;
+
+    /* ↓↓↓ ここを編集してください：カード間の余白 ↓↓↓ */
+    gap: 16px;
+
+    flex-wrap: wrap;
+    /* 画面が狭くなったら折り返す（重要） */
+}
+
+/* 1枚のカード */
+.card {
+    /* ↓↓↓ ここを編集してください：カードの幅 ↓↓↓ */
+    width: 240px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px;
+
+    background: #fff;
+}
+
+.card__image {
+    height: 120px;
+    background: #eaeaea;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card__title {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+
+.card__text {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+}
+
+.card__button {
+    display: inline-block;
+    padding: 8px 10px;
+
+    border: 1px solid #333;
+    border-radius: 999px;
+
+    text-decoration: none;
+    color: #333;
+}
